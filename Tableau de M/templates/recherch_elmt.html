@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Element a rechercher</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+	
+	 <form action="http://localhost:5000/numero_rech" method="get">
+	 
+	 <label>Numero Atomique</label> : <input type="text" name="num_ato" />
+	 <input type="submit" value="Chercher" />
+	 <p><a href="{{ url_for('index') }}">Retour vers la première page</a></p>
+	 </form>
+	</body>
+</html>
